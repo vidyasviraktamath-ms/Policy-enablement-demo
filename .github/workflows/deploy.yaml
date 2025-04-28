@@ -1,7 +1,6 @@
 on:
- 
-    workflow_dispatch
-      
+  workflow_dispatch:
+
 variables:
   # This pipeline is used to deploy Policies, Initiative definitions and Assignments into Azure.
   PAC_OUTPUT_FOLDER: ./Output
@@ -10,14 +9,9 @@ variables:
   # Use the plain text name of each service connection as a reference
   planServiceConnection: "spn-epac-dev"
   devServiceConnection: "spn-epac-dev"
-  
+
   # set the environment selector
   pacEnvironmentSelector: dev
-
-
-  
-
-
 
 pool:
   vmImage: "ubuntu-latest"
@@ -71,7 +65,7 @@ stages:
   - stage: tenantPlan
     displayName: "Plan tenant"
     dependsOn:
-    - Deploy
+      - Deploy
     condition: and(not(failed()), not(canceled()))
     jobs:
       - job: Plan
