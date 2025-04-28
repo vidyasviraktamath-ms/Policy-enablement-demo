@@ -1,3 +1,11 @@
+on:
+  push:
+    branches:
+      - main
+
+ 
+      - feature/*
+      
 variables:
   # This pipeline is used to deploy Policies, Initiative definitions and Assignments into Azure.
   PAC_OUTPUT_FOLDER: ./Output
@@ -10,17 +18,10 @@ variables:
   # set the environment selector
   pacEnvironmentSelector: dev
 
-# what to build trigger
-trigger:
-  branches:
-    include:
-      - feature/*
-  paths:
-    include:
-      - Definitions
-      - Pipelines
 
-pr: none
+  
+
+
 
 pool:
   vmImage: "ubuntu-latest"
