@@ -14,19 +14,6 @@
             },
             "globalNotScopes": [],
             "managedIdentityLocation": "centralus"
-        },
-        {
-            "pacSelector": "EPAC-PROD",
-            "cloud": "AzureCloud",
-            "tenantId": "26a85786-fb99-4a0d-a240-66e06bc794ca",
-            "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/EPAC-IntermediateRoot",
-            "desiredState": { // [optional]
-                "strategy": "full", // default full
-                "keepDfcSecurityAssignments": true, // default false // default full
-                "doNotDisableDeprecatedPolicies": false
-            },
-            "globalNotScopes": [],
-            "managedIdentityLocation": "centralus"
         }
     ]
 }
