@@ -1,15 +1,15 @@
 {
     "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/global-settings-schema.json",
-    "pacOwnerId": "bd715eb8-36d2-4d33-8db0-505e04c0e4aa",
+    "pacOwnerId": "6A6E2070-F6C1-4A03-A07F-E7271BCCD5D5",
     "pacEnvironments": [
         {
-            "pacSelector": "EPAC-DEV",
+            "pacSelector": "tenant",
             "cloud": "AzureCloud",
             "tenantId": "26a85786-fb99-4a0d-a240-66e06bc794ca",
             "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/EPAC-IntermediateRoot",
             "desiredState": { // [optional]
                 "strategy": "ownedOnly", // default full
-                "keepDfcSecurityAssignments": true, // default false
+                "keepDfcSecurityAssignments": false, // default false
                 "doNotDisableDeprecatedPolicies": false
             },
             "globalNotScopes": [],

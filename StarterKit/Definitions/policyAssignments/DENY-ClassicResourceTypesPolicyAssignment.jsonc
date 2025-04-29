@@ -1,7 +1,7 @@
 
 
 {
-    "nodeName": "/tenant/",
+    "nodeName": "/alz/",
     "assignment": {
         "name": "classic-resource",
         
@@ -17,15 +17,14 @@
     },
     
     "scope": {
-        "root": [
+        "tenant": [
            
            "/providers/Microsoft.Management/managementGroups/EPAC-IntermediateRoot"
 
         ]
     },
-"userAssignedIdentity": {
-    
-    "*": "/subscriptions/b220ad58-19fc-4f02-a32b-c2ea5d333032/resourceGroups/Default-ActivityLogAlerts/providers/Microsoft.ManagedIdentity/userAssignedIdentities/uaiforpolicy"
+    "userAssignedIdentity": {
+ "*": "/subscriptions/b220ad58-19fc-4f02-a32b-c2ea5d333032/resourceGroups/Default-ActivityLogAlerts/providers/Microsoft.ManagedIdentity/userAssignedIdentities/uaiforpolicy"
 }
 
    

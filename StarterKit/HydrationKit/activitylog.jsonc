@@ -1,0 +1,29 @@
+{
+    "nodeName": "/alz/",
+    "assignment": {
+        "name": "activity-logs",
+        
+        "displayName": "Configure Azure Activity logs to stream to specified Log Analytics workspace",
+        "description": "Deploys the diagnostic settings for Azure Activity to stream subscriptions audit logs to a Log Analytics workspace to monitor subscription-level events"
+    },
+    "parameters": {
+        "logAnalytics":
+ },
+    "definitionEntry": {
+      "policyId": "/providers/Microsoft.Authorization/policyDefinitions/2465583e-4e78-4c15-b6be-a36cbc7c8b0f"
+     },
+    
+    "scope": {
+        "tenant": [
+           
+           "/providers/Microsoft.Management/managementGroups/EPAC-IntermediateRoot"
+
+        ]
+    },
+"userAssignedIdentity": {
+    
+    "*": "/subscriptions/b220ad58-19fc-4f02-a32b-c2ea5d333032/resourceGroups/Default-ActivityLogAlerts/providers/Microsoft.ManagedIdentity/userAssignedIdentities/uaiforpolicy"
+}
+
+   
+}

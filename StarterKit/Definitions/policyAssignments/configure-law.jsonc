@@ -1,0 +1,28 @@
+
+
+
+
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-assignment-schema.json",
+    "nodeName": "/tenant/",
+    "assignment": {
+        "name": "law-creation",
+        
+        "displayName": "Configure Log Analytics workspace and automation account to centralize logs and monitoring",
+        "description": "Deploy resource group containing Log Analytics workspace and linked automation account to centralize logs and monitoring. The automation account is aprerequisite for solutions like Updates and Change Tracking."
+     },
+    "parameters": {
+        "workspaceRegion": "centralus",
+        "automationRegion": "centralus"
+ },
+    "definitionEntry": {
+      "policyId": "/providers/Microsoft.Authorization/policyDefinitions/8e3e61b3-0b32-22d5-4edf-55f87fdb5955"
+    },
+    
+    "scope": "/subscriptions/ac85840e-3d0d-4294-b3a2-eb16828001b5",
+    "userAssignedIdentity": {
+ "*": "/subscriptions/b220ad58-19fc-4f02-a32b-c2ea5d333032/resourceGroups/Default-ActivityLogAlerts/providers/Microsoft.ManagedIdentity/userAssignedIdentities/uaiforpolicy"
+}
+
+   
+}

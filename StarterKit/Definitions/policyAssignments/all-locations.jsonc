@@ -1,0 +1,25 @@
+{
+    "nodeName": "/alz/",
+    "assignment": {
+    "name": "Locationallow",
+    "displayName": "allowloc",
+    "description": "This policy enables you to restrict the locations your organization can specify when deploying resources. Use to enforce your geo-compliance requirements. Excludes resource groups, Microsoft.AzureActiveDirectory/b2cDirectories, and resources that use the 'global' region."
+},
+    "definitionEntry": {
+      "policyId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c"
+    },
+   
+    "scope": {
+        "tenant": [
+           
+           "/providers/Microsoft.Management/managementGroups/EPAC-IntermediateRoot"
+
+        ]
+    },
+    "parameters": {
+        "listOfAllowedLocations": ["centralus","westus"] 
+    },
+    "userAssignedIdentity": {
+ "*": "/subscriptions/b220ad58-19fc-4f02-a32b-c2ea5d333032/resourceGroups/Default-ActivityLogAlerts/providers/Microsoft.ManagedIdentity/userAssignedIdentities/uaiforpolicy"
+}
+}
