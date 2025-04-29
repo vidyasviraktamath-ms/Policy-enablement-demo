@@ -9,7 +9,7 @@ on:
       planGitHubEnvironment:
         required: false
         type: string
-        default: dev
+        default: null
       PAC_OUTPUT_FOLDER:
         required: true
         type: string
