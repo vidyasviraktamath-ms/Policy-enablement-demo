@@ -28,6 +28,9 @@ env:
   PAC_OUTPUT_FOLDER: ./Output
   PAC_DEFINITIONS_FOLDER: ./Definitions
 
+permissions:
+  id-token: write
+  contents: read
 jobs:
   plan:
     runs-on: ubuntu-latest
